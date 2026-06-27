@@ -1,0 +1,102 @@
+site_name: "Investing in Mutual Funds — the Industry, the Law & the Problems"
+site_description: "A zero-to-expert study program on mutual-fund investing in India, the MF industry, the SEBI (Mutual Funds) Regulations, 2026, and the problems faced by investors and fund houses."
+site_author: "Biju K Mathew"
+site_url: "https://bkmathew.github.io/Mutual_Fund/"
+copyright: "Educational material. Illustrative examples only — not investment advice."
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    admonition:
+      note: material/pencil
+      quote: material/format-quote-close
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - "L1 · Foundations":
+      - "M0 · The Indian MF Market": m00-india-mf-market.md
+      - "M1 · What a Fund Is": m01-what-is-a-fund.md
+      - "M2 · Ecosystem & Flows": m02-ecosystem.md
+      - "M3 · Taxonomy of Schemes": m03-taxonomy.md
+      - "M4 · Cost & Plan Choice": m04-cost-and-plans.md
+      - "M5 · The Investor Journey": m05-investor-journey.md
+  - "L2 · Practical":
+      - "M6 · Four Lifecycle Decisions": m06-lifecycle-decisions.md
+      - "M7 · Reading a Factsheet / SID": m07-factsheet-sid.md
+      - "M8 · Taxation": m08-taxation.md
+  - "L3 · Analyst":
+      - "M9 · Risk-Adjusted Performance": m09-risk-adjusted-performance.md
+      - "M10 · Alpha, Beta, Attribution & Factors": m10-alpha-beta-attribution.md
+      - "M11 · Portfolio Internals & Debt Analytics": m11-portfolio-internals-debt.md
+      - "M12 · Valuation-Aware Entry": m12-valuation-aware-entry.md
+      - "M13 · Monitoring & Rebalancing": m13-monitoring-rebalancing.md
+      - "M14 · Tax-Aware Switch & Exit": m14-tax-aware-exit.md
+  - "L4 · Industry & Law":
+      - "M15 · Portfolio Construction": m15-portfolio-construction.md
+      - "M16 · Archetypes & PMS/AIF Adjacency": m16-archetypes-pms-aif.md
+      - "M17 · Industry Structure & Economics": m17-industry-economics.md
+      - "M18 · SEBI (MF) Regulations, 2026": m18-sebi-regulations-2026.md
+  - "L5 · Problem Maps":
+      - "M19 · 25 Problems — Investors": m19-problems-investors.md
+      - "M20 · 25 Problems — Fund Houses": m20-problems-fundhouses.md
+  - "Capstone":
+      - "M21 · Synthesis & IPS": m21-capstone.md

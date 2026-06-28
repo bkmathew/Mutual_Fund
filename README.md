@@ -67,6 +67,10 @@ Add `.github/workflows/deploy.yml` with a job that runs `pip install mkdocs-mate
 - **Legal anchor:** SEBI (Mutual Funds) Regulations, 2026 (approved 17 Dec 2025, effective 1 Apr 2026). Each module cites the applicable provision; section numbers are used only when verified against the primary text, otherwise tagged `[verify section no.]`.
 - **Not advice:** all examples are illustrative and clearly labelled. No specific buy/sell recommendations.
 
+## License
+
+© 2026 Biju K Mathew. This work is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)** — see [`LICENSE`](LICENSE). You may share and adapt the material with attribution, for non-commercial purposes. Educational and illustrative only; not investment, legal, or tax advice.
+
 ## Status
 
 Scaffold + Module 2 ecosystem diagram complete. Remaining modules are written and delivered level-by-level after approval.

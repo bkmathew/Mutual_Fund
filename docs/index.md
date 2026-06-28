@@ -1,6 +1,8 @@
 <p align="center"><img src="assets/amb-logo.jpg" alt="AMB — Ideas become possibilities" width="200"></p>
 
-# Investing in Mutual Funds — the Industry, the Law & the Problems
+# The Indian Mutual Fund Masterclass
+
+### Zero to Expert — Investing, the Industry, the 2026 Law & the Problems
 
 A study program that takes a reader from **zero** to **subject-matter expert** on mutual-fund investing in India: how funds work, who runs them, the **SEBI (Mutual Funds) Regulations, 2026**, and the real problems faced by investors and by fund houses.
 

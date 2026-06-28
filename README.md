@@ -1,6 +1,8 @@
-# Investing in Mutual Funds — the Industry, the Law & the Problems
+# The Indian Mutual Fund Masterclass
 
-A zero-to-expert study program (India, 2026) on mutual-fund investing, the MF industry, the **SEBI (Mutual Funds) Regulations, 2026**, and the problems faced by investors and fund houses. Built as a static [MkDocs](https://www.mkdocs.org/) + [Material](https://squidfunk.github.io/mkdocs-material/) site for GitHub Pages.
+**Zero to Expert — Investing, the Industry, the 2026 Law & the Problems.**
+
+A study program (India, 2026) on mutual-fund investing, the MF industry, the **SEBI (Mutual Funds) Regulations, 2026**, and the problems faced by investors and fund houses. Built as a static [MkDocs](https://www.mkdocs.org/) + [Material](https://squidfunk.github.io/mkdocs-material/) site for GitHub Pages.
 
 ## Repository layout
 

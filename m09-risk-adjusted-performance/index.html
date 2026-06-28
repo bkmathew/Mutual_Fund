@@ -2064,19 +2064,19 @@
 <p>Before adjusting for risk, measure return correctly. A multi-year result must be <strong>annualised</strong> as a compound rate, not a simple average.</p>
 <div class="admonition note">
 <p class="admonition-title">Formula — CAGR (Compound Annual Growth Rate)</p>
-<p>$<span class="arithmatex">\(\text{CAGR} = \left(\frac{\text{Ending value}}{\text{Beginning value}}\right)^{1/n} - 1\)</span>$
+<p>CAGR = (Ending value / Beginning value)<sup>1/n</sup> − 1
 where <em>n</em> = number of years.</p>
 </div>
 <h3 id="worked-example-1-cagr">Worked example 1 — CAGR<a class="headerlink" href="#worked-example-1-cagr" title="Permanent link">&para;</a></h3>
 <p>₹1,00,000 grows to ₹2,01,000 in 6 years:
-$<span class="arithmatex">\(\text{CAGR} = (2.01)^{1/6} - 1 = 1.1234 - 1 = 12.34\%\)</span>$
+CAGR = (2.01)<sup>1/6</sup> - 1 = 1.1234 - 1 = 12.34%
 This single number is comparable across funds and periods — unlike "the fund doubled", which hides <em>how long</em> it took.</p>
 <hr />
 <h2 id="3-measuring-risk-four-lenses">3. Measuring risk — four lenses<a class="headerlink" href="#3-measuring-risk-four-lenses" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Definitions — the risk measures</p>
 <ul>
-<li><strong>Standard deviation (σ, volatility)</strong> — how much returns scatter around their average. Computed from periodic (e.g. monthly) returns and <strong>annualised</strong>: <span class="arithmatex">\(\sigma_{\text{annual}} = \sigma_{\text{monthly}} \times \sqrt{12}\)</span>. Higher σ = a bumpier ride.</li>
+<li><strong>Standard deviation (σ, volatility)</strong> — how much returns scatter around their average. Computed from periodic (e.g. monthly) returns and <strong>annualised</strong>: σ<sub>annual</sub> = σ<sub>monthly</sub> × √(12). Higher σ = a bumpier ride.</li>
 <li><strong>Downside deviation</strong> — like σ but counts <strong>only returns below a target</strong> (often the risk-free rate or zero). It ignores "good" volatility (upside), capturing only the risk you actually dislike.</li>
 <li><strong>Maximum drawdown</strong> — the largest peak-to-trough fall over the period. Answers "what is the worst it put me through?" — the number that predicts panic-selling.</li>
 <li><strong>Beta (β)</strong> — sensitivity to the market: β = 1.1 means the fund tends to move 1.1× the index. <em>Introduced here; derived in <a href="../m10-alpha-beta-attribution/"><strong>M10</strong></a>.</em></li>
@@ -2122,34 +2122,34 @@ This single number is comparable across funds and periods — unlike "the fund d
 <h3 id="41-sharpe-ratio-excess-return-per-unit-of-total-risk">4.1 Sharpe ratio — excess return per unit of <em>total</em> risk<a class="headerlink" href="#41-sharpe-ratio-excess-return-per-unit-of-total-risk" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Formula — Sharpe ratio</p>
-<p>$<span class="arithmatex">\(\text{Sharpe} = \frac{R_p - R_f}{\sigma_p}\)</span>$
+<p>Sharpe = (R<sub>p</sub> - R<sub>f</sub>) / σ<sub>p</sub>
 Excess return (over the risk-free rate) per unit of <strong>total</strong> volatility. Higher is better. The single most-used measure.</p>
 </div>
-<div class="arithmatex">\[\text{Sharpe}_A = \frac{14 - 6.5}{18} = 0.42 \qquad \text{Sharpe}_B = \frac{12 - 6.5}{11} = 0.50\]</div>
+<p>Sharpe<sub>A</sub> = (14 - 6.5) / 18 = 0.42 Sharpe<sub>B</sub> = (12 - 6.5) / 11 = 0.50</p>
 <p><strong>Fund B wins</strong> despite its <em>lower</em> return — it delivered more reward per unit of risk. This is the module's central lesson in one line: <strong>higher return ≠ better fund.</strong></p>
 <h3 id="42-sortino-ratio-excess-return-per-unit-of-downside-risk">4.2 Sortino ratio — excess return per unit of <em>downside</em> risk<a class="headerlink" href="#42-sortino-ratio-excess-return-per-unit-of-downside-risk" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Formula — Sortino ratio</p>
-<p>$<span class="arithmatex">\(\text{Sortino} = \frac{R_p - R_f}{\text{Downside deviation}}\)</span>$
+<p>Sortino = (R<sub>p</sub> - R<sub>f</sub>) / (Downside deviation)
 Like Sharpe, but penalises only <strong>harmful</strong> (downside) volatility — fairer to funds whose volatility is mostly upside.</p>
 </div>
-<div class="arithmatex">\[\text{Sortino}_A = \frac{7.5}{12} = 0.63 \qquad \text{Sortino}_B = \frac{5.5}{7} = 0.79\]</div>
+<p>Sortino<sub>A</sub> = 7.5 / 12 = 0.63 Sortino<sub>B</sub> = 5.5 / 7 = 0.79</p>
 <p>Fund B again leads — its losses, specifically, were better contained.</p>
 <h3 id="43-treynor-ratio-excess-return-per-unit-of-market-risk">4.3 Treynor ratio — excess return per unit of <em>market</em> risk<a class="headerlink" href="#43-treynor-ratio-excess-return-per-unit-of-market-risk" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Formula — Treynor ratio</p>
-<p>$<span class="arithmatex">\(\text{Treynor} = \frac{R_p - R_f}{\beta_p}\)</span>$
+<p>Treynor = (R<sub>p</sub> - R<sub>f</sub>) / β<sub>p</sub>
 Excess return per unit of <strong>beta</strong> (market risk only). Appropriate when the fund is one part of an already-diversified portfolio, so only its <em>market</em> risk matters.</p>
 </div>
-<div class="arithmatex">\[\text{Treynor}_A = \frac{7.5}{1.10} = 6.82 \qquad \text{Treynor}_B = \frac{5.5}{0.80} = 6.88\]</div>
+<p>Treynor<sub>A</sub> = 7.5 / 1.10 = 6.82 Treynor<sub>B</sub> = 5.5 / 0.80 = 6.88</p>
 <p>Close, with B marginally ahead.</p>
 <h3 id="44-information-ratio-active-skill-per-unit-of-active-risk">4.4 Information Ratio — active skill per unit of <em>active</em> risk<a class="headerlink" href="#44-information-ratio-active-skill-per-unit-of-active-risk" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Formula — Information Ratio (IR)</p>
-<p>$<span class="arithmatex">\(\text{IR} = \frac{R_p - R_b}{\text{Tracking error}}\)</span>$
+<p>IR = (R<sub>p</sub> - R<sub>b</sub>) / (Tracking error)
 Return <strong>above the benchmark</strong> per unit of <strong>tracking error</strong> (how much the fund deviates from the benchmark). The cleanest measure of an <strong>active manager's skill</strong>.</p>
 </div>
-<div class="arithmatex">\[\text{IR}_A = \frac{2.5}{5} = 0.50 \qquad \text{IR}_B = \frac{0.5}{3} = 0.17\]</div>
+<p>IR<sub>A</sub> = 2.5 / 5 = 0.50 IR<sub>B</sub> = 0.5 / 3 = 0.17</p>
 <div class="admonition tip">
 <p class="admonition-title">The nuance that separates analysts from amateurs</p>
 <p><strong>Sharpe says B; the Information Ratio says A.</strong> They answer <em>different</em> questions. Sharpe asks "best reward for total risk?" — B. IR asks "most <em>skill</em> in beating the benchmark?" — A. A fund can be a great <em>standalone</em> holding (high Sharpe) yet a weak <em>active</em> bet (low IR), or vice-versa. <strong>Always match the ratio to the decision.</strong></p>
@@ -2330,10 +2330,6 @@ Return <strong>above the benchmark</strong> per unit of <strong>tracking error</
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
-      
-        <script src="../assets/mathjax.js"></script>
-      
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -2131,8 +2131,8 @@
 <p>Beyond the top-10 weight (<a href="../m07-factsheet-sid/"><strong>M7</strong></a>), the <strong>Herfindahl-Hirschman Index (HHI)</strong> captures concentration in one number:</p>
 <div class="admonition note">
 <p class="admonition-title">Formula — HHI (concentration)</p>
-<p>$<span class="arithmatex">\(\text{HHI} = \sum_i w_i^2 \quad(\text{weights as decimals})\)</span>$
-Higher = more concentrated. An equal-weighted 50-stock fund has HHI ≈ 0.02; a fund with a few dominant bets scores far higher. <span class="arithmatex">\(1/\text{HHI}\)</span> gives the <strong>effective number of stocks</strong>.</p>
+<p>HHI = Σ<sub>i</sub> w<sub>i</sub>² (weights as decimals)
+Higher = more concentrated. An equal-weighted 50-stock fund has HHI ≈ 0.02; a fund with a few dominant bets scores far higher. 1/HHI gives the <strong>effective number of stocks</strong>.</p>
 </div>
 <h3 id="worked-example-1-two-funds-same-count-different-concentration">Worked example 1 — two funds, same count, different concentration<a class="headerlink" href="#worked-example-1-two-funds-same-count-different-concentration" title="Permanent link">&para;</a></h3>
 <p>Both hold 20 stocks. Fund P is equal-weighted (5% each): HHI = 20 × 0.05² = <strong>0.05</strong> → effective stocks = 1/0.05 = <strong>20</strong>. Fund Q has 4 stocks at 15% and 16 at 2.5%: HHI = 4(0.15²) + 16(0.025²) = 0.09 + 0.01 = <strong>0.10</strong> → effective stocks = <strong>10</strong>. Same 20 holdings, but Q is <strong>twice as concentrated</strong> — its result will hinge on four names. The count alone lied; HHI told the truth.</p>
@@ -2140,7 +2140,7 @@ Higher = more concentrated. An equal-weighted 50-stock fund has HHI ≈ 0.02; a 
 <p>Holding three "different" funds that own the same stocks is <strong>false diversification</strong> (recall the 2026 50%-overlap rule, <a href="../m03-taxonomy/"><strong>M3</strong></a>).</p>
 <div class="admonition note">
 <p class="admonition-title">Formula — portfolio overlap</p>
-<p>$<span class="arithmatex">\(\text{Overlap} = \sum_i \min(w_i^{A}, w_i^{B})\)</span>$
+<p>Overlap = Σ<sub>i</sub> (w<sub>i</sub><sup>A</sup>, w<sub>i</sub><sup>B</sup>)
 summed over common holdings. 70% overlap means the two funds are 70% the same portfolio.</p>
 </div>
 <h3 id="23-turnover-the-hidden-cost-of-churn">2.3 Turnover — the hidden cost of churn<a class="headerlink" href="#23-turnover-the-hidden-cost-of-churn" title="Permanent link">&para;</a></h3>
@@ -2153,14 +2153,14 @@ summed over common holdings. 70% overlap means the two funds are 70% the same po
 <div class="admonition note">
 <p class="admonition-title">Formulas — Macaulay &amp; modified duration</p>
 <p><strong>Macaulay duration</strong> = the cash-flow-weighted average time (years) to receive a bond's payments:
-$<span class="arithmatex">\(D_{\text{Mac}} = \frac{\sum_t t \cdot \frac{CF_t}{(1+y)^t}}{\text{Price}}\)</span>$
+D<sub>Mac</sub> = (Σ<sub>t</sub> t · CF<sub>t</sub> / ((1+y)<sup>t</sup>)) / Price
 <strong>Modified duration</strong> converts it into price sensitivity:
-$<span class="arithmatex">\(D_{\text{mod}} = \frac{D_{\text{Mac}}}{1 + y/n}\qquad\text{and}\qquad \frac{\Delta P}{P} \approx -\,D_{\text{mod}} \times \Delta y\)</span>$
+D<sub>mod</sub> = D<sub>Mac</sub> / (1 + y/n) and (Δ P) / P ≈ - D<sub>mod</sub> × Δ y
 where <em>n</em> = compounding periods/year. A modified duration of 4 means <strong>+1% in yields → ~−4% in price</strong>.</p>
 </div>
 <h3 id="worked-example-2-what-a-rate-move-does-to-a-debt-funds-nav">Worked example 2 — what a rate move does to a debt fund's NAV<a class="headerlink" href="#worked-example-2-what-a-rate-move-does-to-a-debt-funds-nav" title="Permanent link">&para;</a></h3>
 <p>A debt fund reports <strong>modified duration 3.5</strong>. The RBI surprises with a <strong>+0.50%</strong> rate move (yields rise):
-$<span class="arithmatex">\(\frac{\Delta \text{NAV}}{\text{NAV}} \approx -3.5 \times 0.50\% = -1.75\%\)</span>$
+(Δ NAV) / NAV ≈ -3.5 × 0.50% = -1.75%
 The NAV falls ~1.75% — overnight, with no default involved. A <strong>long-duration gilt</strong> (duration 8) would fall ~4%, while an <strong>overnight fund</strong> (duration ~0) barely moves. <strong>Duration is the single most important number for predicting a debt fund's volatility.</strong></p>
 <h3 id="33-convexity-why-duration-under-states-the-truth">3.3 Convexity — why duration under-states the truth<a class="headerlink" href="#33-convexity-why-duration-under-states-the-truth" title="Permanent link">&para;</a></h3>
 <p>Duration is a <em>straight-line</em> estimate, but the real price-yield relationship is <strong>curved (convex)</strong>:</p>
@@ -2390,10 +2390,6 @@ The NAV falls ~1.75% — overnight, with no default involved. A <strong>long-dur
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
-      
-        <script src="../assets/mathjax.js"></script>
-      
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
